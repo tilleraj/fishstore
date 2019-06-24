@@ -1,14 +1,19 @@
 import React from 'react';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Auth from '../components/Auth/Auth';
+import Home from '../components/Home/Home';
+
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <button className='btn btn-danger'>HELP ME</button>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Auth />
+        <Home />
+      </div>
+    );
+  }
 }
 
 export default App;
