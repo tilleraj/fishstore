@@ -1,4 +1,3 @@
-// on the left
 import React from 'react';
 import Fish from '../Fish/Fish';
 import fishData from '../../helpers/data/fishData';
