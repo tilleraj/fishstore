@@ -16,4 +16,6 @@ const getMyOrders = uid => new Promise((resolve, reject) => {
     .catch(error => reject(error));
 });
 
-export default { getMyOrders };
+const deleteOrder = orderId => axios.delete(`${baseUrl}/orders/${orderId}.json`);
+
+export default { getMyOrders, deleteOrder };
