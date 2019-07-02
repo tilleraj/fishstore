@@ -8,6 +8,12 @@ class NewOrder extends React.Component {
     orderName: '',
   }
 
+  componentWillUpdate(nextProps) {
+    if (nextProps.orderEditing !== this.props.orderEditing && nextProps.orderEditing.name) {
+      this.setState({ orderName: nextProps.orderEditing.name });
+    }
+  }
+
   nameChange = (e) => {
     e.preventDefault();
     this.setState({ orderName: e.target.value });
@@ -46,7 +52,7 @@ class NewOrder extends React.Component {
   }
 
   render() {
-    const { fishOrder } = this.props;
+    const { fishOrder, orderEditing } = this.props;
     const { orderName } = this.state;
     const orderIds = Object.keys(fishOrder);
     const orderExists = orderIds.length > 0;
@@ -59,7 +65,8 @@ class NewOrder extends React.Component {
 
     return (
       <div className="NewOrder">
-        <h1>New Order</h1>
+        <h1>{Object.keys(orderEditing).length > 1 ? 'Edit Order' : 'New Order'}</h1>
+        {Object.keys(orderEditing).length > 1 ? (<h4>Order id: {orderEditing.id}</h4>) : ''}
         <form className='col-6 offset-3'>
           <div className="form-group">
             <label htmlFor="order-name">Order Name:</label>
