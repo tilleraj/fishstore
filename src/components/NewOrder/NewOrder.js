@@ -8,8 +8,13 @@ class NewOrder extends React.Component {
   renderOrder = (key) => {
     const fish = this.props.fishes.find(x => x.id === key);
     const count = this.props.fishOrder[key];
+    const xClickFunction = (e) => {
+      e.preventDefault();
+      this.props.removeFromOrder(key);
+    };
+
     return (
-      <li>
+      <li key={key} className="row">
         <div className="col-2 count">
           {count} lbs
         </div>
@@ -20,7 +25,7 @@ class NewOrder extends React.Component {
           {format.formatPrice(fish.price * count)}
         </div>
         <div className="col-2">
-          <button className="btn btn-outline-dark">X</button>
+          <button className="btn btn-outline-dark" onClick={xClickFunction}>X</button>
         </div>
       </li>
     );
@@ -51,7 +56,7 @@ class NewOrder extends React.Component {
             />
           </div>
         </form>
-        <ul>{orderIds.map(this.renderOrder)}</ul>
+        <ul className="pl-0">{orderIds.map(this.renderOrder)}</ul>
         <div className="total">
           Total: <strong>{format.formatPrice(total)}</strong>
         </div>
@@ -61,7 +66,7 @@ class NewOrder extends React.Component {
               <button className="btn btn-outline-dark"> Save Order </button>
             ) : (
                 <div>Add Inventory to your order</div>
-            )
+              )
           }
         </div>
       </div>
