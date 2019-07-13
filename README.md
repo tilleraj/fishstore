@@ -2,9 +2,9 @@
 This project is an exercise in using React to pass data and functions between components.
 
 ## Screenshot
-![A picture of new order creation](https://raw.githubusercontent.com/tilleraj/fish-store/master/assets/images/screenshots/screenshot02.png)
-![A picture of a submitted order](https://raw.githubusercontent.com/tilleraj/fish-store/master/assets/images/screenshots/screenshot03.png)
-![A picture of editing an existing order](https://raw.githubusercontent.com/tilleraj/fish-store/master/assets/images/screenshots/screenshot04.png)
+![A picture of new order creation](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_02.png)
+![A picture of a submitted order](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_02.png)
+![A picture of editing an existing order](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_02.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
