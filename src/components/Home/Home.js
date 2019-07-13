@@ -96,12 +96,11 @@ class Home extends React.Component {
     } = this.state;
     return (
       <div className="Home">
-        <div className="container">
-          <div className="row">
-            <div className="col">
+        <div className="row">
+            <div className="col-12 col-md-6 col-lg-4">
               <Inventory fishes={fishes} addFishToOrder={this.addFishToOrder} />
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6 col-lg-4">
               <NewOrder
                 fishes={fishes}
                 fishOrder={fishOrder}
@@ -110,14 +109,13 @@ class Home extends React.Component {
                 orderEditing={orderEditing}
               />
             </div>
-            <div className="col">
+            <div className="col-12 col-md-6 col-lg-4">
               <Orders
                 orders={orders}
                 deleteOrder={this.deleteOrder}
                 selectOrderToEdit={this.selectOrderToEdit}
               />
             </div>
-          </div>
         </div>
       </div>
     );
