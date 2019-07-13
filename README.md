@@ -5,9 +5,9 @@ This project is an exercise in using React to pass data and functions between co
 Creating a new order:
 ![A picture of new order creation](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_02.png)
 A submitted order:
-![A picture of a submitted order](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_02.png)
+![A picture of a submitted order](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_03.png)
 Editing an existing order:
-![A picture of editing an existing order](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_02.png)
+![A picture of editing an existing order](https://raw.githubusercontent.com/tilleraj/fishstore/master/screenshots/screenshot_04.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
